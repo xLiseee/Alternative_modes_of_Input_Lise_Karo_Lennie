@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.circle {
+    width: 800px;
+    height: 800px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle2 {
+    width: 750px;
+    height: 750px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#instruction {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #333;
+    z-index: 1;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cijfer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.knop {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to right, darkgreen, lightgreen);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-position 0.1s ease;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+
+.blink {
+    animation: blink-animation 0.5s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    0% { visibility: hidden; }
+    50% { visibility: hidden; }
+    100% { visibility: visible; }
+}
+
